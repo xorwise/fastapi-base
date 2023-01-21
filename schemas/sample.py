@@ -1,15 +1,15 @@
 from pydantic import BaseModel
 
 
-class FooItemBase(BaseModel):
+class SampleItemBase(BaseModel):
     description: str
 
 
-class FooItemCreate(FooItemBase):
+class SampleTableItemCreate(SampleItemBase):
     public: bool
 
 
-class FooItem(FooItemBase):
+class SampleItem(SampleItemBase):
     id: int
 
     class Config:
